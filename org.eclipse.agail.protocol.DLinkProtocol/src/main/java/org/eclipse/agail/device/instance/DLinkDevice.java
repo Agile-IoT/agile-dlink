@@ -99,9 +99,7 @@ public class DLinkDevice extends DeviceImp implements Device {
 
   	@Override
     protected String DeviceRead(String componentName) {
-        logger.debug("DeviceReading {} {}", componentName, protocol);
         if ((protocol.equals(DLINK_PROTOCOL_ID)) && (deviceProtocol != null)) {
-            logger.debug("DeviceReading is conected: {}", isConnected());
             if (isConnected()) {
                 if (isSensorSupported(componentName.trim())) {
                     try {
@@ -179,7 +177,6 @@ public class DLinkDevice extends DeviceImp implements Device {
     @Override
     public void Connect() throws DBusException {
         deviceStatus = DeviceStatusType.CONNECTED;
-        logger.info("Device connected {}", deviceID);
 
         deviceProtocol.Connect(deviceID);
     }
@@ -187,7 +184,6 @@ public class DLinkDevice extends DeviceImp implements Device {
     @Override
     public void Disconnect() throws DBusException {
         deviceStatus = DeviceStatusType.DISCONNECTED;
-        logger.info("Device disconnected {}", deviceID);
 
         deviceProtocol.Disconnect(deviceID);
     }
