@@ -15,6 +15,12 @@ DLINK™ device file handles:
     •	Devices connection / disconnection to AGILE
     •	Data request to the protocol component
 
+DLINK™ protocol is simple and straightforward, the devices implement an HNAP interface which can be consumed using network SOAP messages, that API is protected by a PIN code specific for every device. 
+
+As a side note and due to the current limitations of the AGILE gateway, we have hardcoded the device IP address and the PIN code as UI/framework did not provide any means to allow the user to introduce any of those parameters manually (the PIN code cannot be auto discovered for obvious reasons).
+
+After a device is discovered and registered, the protocol component will periodically poll the device to get the latest detection date, when the date changes a DETECTION event is generated and reported to enControl, after 5 seconds the state is changed back to OK status which is also reported to the cloud. This status is also stored in memory, so when AGILE platform requires a read from a registered device, the protocol returns device’s status.
+
 Pre-requisites:
 ---------------
   1.	Choose an AGILE installation method http://agile-iot.eu/resources/agile-wiki/ 
