@@ -1,5 +1,8 @@
 # agile-dlink-protocol
 A DLink DCH S150 java protocol implementation for AGILE gateway.
+
+This component integrates a sensor protocol  for DLINK™ Wi-Fi motion sensors (http://us.dlink.com/products/connected-home/wi-fi-motion-sensor/) into the AGILE  gateway, that will allow the platform to connect this new devices, collect their data and send it to enControl backend. 
+
 Following AGILE architecture, it is developed as a docker container implementing DLINK™ protocol communication and a DLINK™ device file which handles the AGILE device interface.
 
 DLINK™ protocol component handles:
