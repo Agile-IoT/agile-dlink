@@ -1,5 +1,17 @@
 # agile-dlink-protocol
 A DLink DCH S150 java protocol implementation for AGILE gateway
+Following AGILE architecture, it is developed as a docker container implementing DLINK™ protocol communication and a DLINK™ device file which handles the AGILE device interface.
+
+DLINK™ protocol component handles:
+•	Devices discovery
+•	Devices registration
+•	Devices communication
+•	Data push to enControl
+
+DLINK™ device file handles:
+•	Devices connectivity status
+•	Devices connection / disconnection to AGILE
+•	Data request to the protocol component
 
 Pre-requisites:
 ---------------
