@@ -4,21 +4,16 @@ Following AGILE architecture, it is developed as a docker container implementing
 
 DLINK™ protocol component handles:
 
-  •	Devices discovery
-  
-  •	Devices registration
-  
-  •	Devices communication
-  
-  •	Data push to enControl
+    •	Devices discovery
+    •	Devices registration  
+    •	Devices communication
+    •	Data push to enControl
 
 DLINK™ device file handles:
 
-  •	Devices connectivity status
-
-  •	Devices connection / disconnection to AGILE
-
-  •	Data request to the protocol component
+    •	Devices connectivity status
+    •	Devices connection / disconnection to AGILE
+    •	Data request to the protocol component
 
 Pre-requisites:
 ---------------
