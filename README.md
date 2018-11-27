@@ -30,17 +30,11 @@ Steps to use it in your AGILE project:
   2.	Modify agile-dlink configuration parameters:
   
     a.	DLink device IP (found in file DLinkProtocol.java and DLinkMotionSensorHandler.java)
-    
     b.	DLink device PIN (found in file DLinkMotionSensorHandler.java)
-  
-    c.	enControl API key (found in file SStackWebApiConsumer.java)
-    
-    d.	enControl username (found in file SStackWebApiConsumer.java)
-    
-    e.	enControl password (found in file SStackWebApiConsumer.java)
-    
-    f.	enControl installation Id (found in file DLinkMotionSensorHandler.java)
-    
+    c.	enControl API key (found in file SStackWebApiConsumer.java)   
+    d.	enControl username (found in file SStackWebApiConsumer.java)    
+    e.	enControl password (found in file SStackWebApiConsumer.java)    
+    f.	enControl installation Id (found in file DLinkMotionSensorHandler.java)   
     g.	enControl sensor Id (found in file DLinkMotionSensorHandler.java)
   
   3.	Compile DLinkDevice.java and copy the resulting .class file to your deployment target’s device files folder (follow the complete and detailed AGILE’s official documentation that can be found following the link http://agile-iot.eu/wiki/index.php?title=Dev_Device) 
