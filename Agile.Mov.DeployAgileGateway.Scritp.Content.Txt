@@ -1,0 +1,14 @@
+#!/bin/sh
+
+echo 'Deploy agile start\n'
+
+cd /home/sensing/Downloads/agile-dev/agile-stack
+
+echo 'Stop current deployment\n'
+docker-compose down
+
+echo '\nBuilding components\n'
+docker-compose build
+
+echo '\nStarting components\n'
+docker-compose up -d
